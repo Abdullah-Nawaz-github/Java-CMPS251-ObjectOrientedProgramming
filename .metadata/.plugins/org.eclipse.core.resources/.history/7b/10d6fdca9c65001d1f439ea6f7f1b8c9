@@ -1,0 +1,20 @@
+package practiceExercises;
+
+public class Lion extends Animal implements Predator {
+boolean hungry;
+public Lion(double weight, int age) f
+super(Lion", weight, age);
+hungry = true;
+@Override
+public boolean eats( Animal a) f
+/I Lions can eat anything. Theyre awesome.
+return true;
+@Override
+public int getTeeth0 f
+return 30
+@Override
+public boolean getHungry0) f
+return this.hungry;
+@Override
+public void setHungry(boolean hungry) f
+this.hungry = hungry;

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CustomerEditorController">
+   <top>
+      <Label fx:id="memberEditLabel" alignment="CENTER" prefHeight="129.0" prefWidth="672.0" text="Add/Update Member" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <GridPane alignment="CENTER" prefHeight="463.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Member ID" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <Label text="Mobile" GridPane.rowIndex="2" />
+            <Label text="Nationality" GridPane.rowIndex="3" />
+            <Label text="Gender" GridPane.rowIndex="4" />
+            <Label text="Membership Type" GridPane.rowIndex="5" />
+            <Label text="Discount" GridPane.rowIndex="6" />
+            <Button fx:id="okButton" mnemonicParsing="false" onAction="#HandleOKButton" prefHeight="26.0" prefWidth="345.0" text="OK" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#HandleCancelButton" prefHeight="26.0" prefWidth="368.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField fx:id="idTF" GridPane.columnIndex="1" />
+            <TextField fx:id="nameTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="mobileTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="nationalityTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <RadioButton fx:id="maleRadio" mnemonicParsing="false" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="femaleRadio" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <RadioButton fx:id="dailyRadio" mnemonicParsing="false" onAction="#HandleDailyRadio" text="Daily">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="type" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="monthlyRadio" mnemonicParsing="false" onAction="#HandleMonthlyRadio" text="Monthly" toggleGroup="$type">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="yearlyRadio" mnemonicParsing="false" onAction="#HandleYearlyRadio" text="Yearly" toggleGroup="$type">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <TextField fx:id="discountTF" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </GridPane>
+   </center>
+</BorderPane>

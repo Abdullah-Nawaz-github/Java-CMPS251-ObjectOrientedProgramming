@@ -1,0 +1,23 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Users/abdullah/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.6.v20230204-1729/jre/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Users/abdullah/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.6.v20230204-1729/jre/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.methodParameters=do not generate
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.debug.lineNumber=generate
+org.eclipse.jdt.core.compiler.debug.localVariable=generate
+org.eclipse.jdt.core.compiler.debug.sourceFile=generate
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.compiler.taskCaseSensitive=enabled
+org.eclipse.jdt.core.compiler.taskPriorities=NORMAL,HIGH,NORMAL
+org.eclipse.jdt.core.compiler.taskTags=TODO,FIXME,XXX
+org.eclipse.jdt.core.userLibrary.JavaFX=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx-swt.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.base.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.controls.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.fxml.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.graphics.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.media.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.swing.jar"/>\n\t<archive path\="/Users/abdullah/Downloads/javafx-sdk-14/lib/javafx.web.jar"/>\n</userlibrary>\n

@@ -1,0 +1,8 @@
+package practiceExercises;
+
+public interface Predator {
+	public int getTeeth();
+	public boolean getHungry();
+	public void setHungry(boolean Hungry);
+
+}

@@ -1,0 +1,30 @@
+package practiceExercises;
+
+public class Lion extends Animal implements Predator {
+	boolean hungry;
+
+	public Lion(double weight, int age) {
+		super("Lion", weight, age);
+		hungry = true;
+	}
+
+	@Override
+	public boolean eats(Animal a) {
+		return true;
+	}
+
+	@Override
+	public int getTeeth() {
+		return 30;
+	}
+
+	@Override
+	public boolean getHungry() {
+		return this.hungry;
+	}
+
+@Override
+public void setHungry(boolean hungry) {
+this.hungry = hungry;
+
+}}

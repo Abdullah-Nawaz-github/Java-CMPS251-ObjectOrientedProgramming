@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="658.0" prefWidth="1108.0" style="-fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SessionViewController">
+	<top>
+		<ToolBar prefHeight="60.0" prefWidth="1315.0" BorderPane.alignment="CENTER">
+			<items>
+				<Button fx:id="addSessionButton" mnemonicParsing="false" onAction="#HandleAddSessionButton" prefHeight="0.0" prefWidth="176.0" style="-fx-border-color: black; -fx-background-color: white;" text="Add">
+					<font>
+						<Font name="Apple Color Emoji" size="22.0" />
+					</font>
+				</Button>
+				<Button fx:id="registerSessionButton" mnemonicParsing="false" onAction="#handleRegisterSessionButton" prefHeight="0.0" prefWidth="176.0" style="-fx-border-color: black; -fx-background-color: white;" text="Register">
+					<font>
+						<Font name="Apple Color Emoji" size="22.0" />
+					</font>
+				</Button>
+				<Button fx:id="unregisterSessionButton" mnemonicParsing="false" onAction="#HandleUnregisterSessionButton" prefHeight="0.0" prefWidth="176.0" style="-fx-border-color: black; -fx-background-color: white;" text="Un-Register">
+					<font>
+						<Font name="Apple Color Emoji" size="22.0" />
+					</font>
+				</Button>
+				<Button fx:id="saveSessionButton" mnemonicParsing="false" onAction="#HandleSaveSessionButton" prefHeight="0.0" prefWidth="176.0" style="-fx-border-color: black; -fx-background-color: white;" text="Save">
+					<font>
+						<Font name="Apple Color Emoji" size="22.0" />
+					</font>
+				</Button>
+			</items>
+		</ToolBar>
+	</top>
+	<center>
+		<AnchorPane prefHeight="583.0" prefWidth="1069.0" BorderPane.alignment="CENTER">
+			<children>
+				<TableView fx:id="SessionTableView" layoutX="3.0" layoutY="3.0" prefHeight="569.0" prefWidth="1468.0">
+					<columns>
+						<TableColumn fx:id="idCol" maxWidth="1.7976931348623157E308" prefWidth="101.99999475479126" text="Session id" />
+
+						<TableColumn fx:id="nameCol" maxWidth="1.7976931348623157E308" prefWidth="101.99999475479126" text="Session Name" />
+						<TableColumn fx:id="coachCol" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="168.6666717529297" text="Coach" />
+						<TableColumn fx:id="startdateCol" maxWidth="1.7976931348623157E308" prefWidth="160.0" text="StartDate" />
+						<TableColumn fx:id="enddateCol" maxWidth="1.7976931348623157E308" prefWidth="163.33334350585938" text="EndDate" />
+						<TableColumn fx:id="starttimeCol" maxWidth="1.7976931348623157E308" prefWidth="125.3333740234375" text="StartTime" />
+						<TableColumn fx:id="endtimeCol" maxWidth="1.7976931348623157E308" prefWidth="150.66668701171875" text="EndTime" />
+						<TableColumn fx:id="priceCol" maxWidth="324.6666259765625" prefWidth="175.99993896484375" text="Price" />
+						<TableColumn fx:id="customerCol" maxWidth="370.0" prefWidth="309.38525390625" text="Customer" />
+					</columns>
+				</TableView>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
